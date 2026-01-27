@@ -36,26 +36,21 @@ def generate_launch_description():
     
     grasping_node = Node(
         package="brick_grasping_model",
-        executable="brick_grasping_node.py",
+        executable="advanced_grasping_node.py",
         output="screen",
         parameters=[]
     )
 
     detection_node = Node(
         package="brick_detection",
-        executable="yolo_detector",
+        executable="advanced_yolo",
         output="screen",
         parameters=[]
     )
 
-
-
-
-    
     # Add nodes to the launch description:
     LD.add_action(grasping_node)
     LD.add_action(detection_node)
-    # LD.add_action(static_tf)
     
     return LD
 
