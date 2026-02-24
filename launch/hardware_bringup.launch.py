@@ -26,8 +26,8 @@ def generate_launch_description():
     # Make sure to update 'your_package_name' to the actual name of your package
     brick_detector_node = Node(
         package='brick_detection', # Replace with your package name
-        executable='advanced_yolo', # Replace with your executable name/entry point
-        name='advanced_yolo',
+        executable='final_detector', # Replace with your executable name/entry point
+        name='final_detector',
         output='screen',
         parameters=[{
             'static_z_height': 0.712, # The calibrated height
