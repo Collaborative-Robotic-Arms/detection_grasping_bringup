@@ -60,8 +60,8 @@ def generate_launch_description():
 
     # 4. Return the LaunchDescription
     return LaunchDescription([
-        realsense_launch,
+        #realsense_launch,
         brick_detector_node,
         grasping_node,
-        tf_camera_base_link
+       # tf_camera_base_link
     ])
