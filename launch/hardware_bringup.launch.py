@@ -47,7 +47,7 @@ def launch_setup(context, *args, **kwargs):
     }
     
     if is_sim:
-        detector_params['static_z_height'] = 0.723  # Derived from table height minus brick height
+        detector_params['static_z_height'] = 0.733  # Derived from table height minus brick height
     else:
         detector_params['static_z_height'] = 0.712
 
