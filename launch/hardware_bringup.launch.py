@@ -47,7 +47,7 @@ def launch_setup(context, *args, **kwargs):
     }
     
     if is_sim:
-        detector_params['static_z_height'] = 0.733  # Derived from table height minus brick height
+        detector_params['static_z_height'] = 0.723  # Derived from table height minus brick height
     else:
         detector_params['static_z_height'] = 0.712
 
@@ -62,9 +62,9 @@ def launch_setup(context, *args, **kwargs):
     }
     
     if is_sim:
-        grasping_params['depth_scale'] = 1.0
+        grasping_params['static_z_height'] = 0.723
     else:
-        grasping_params['depth_scale'] = 0.001
+        grasping_params['static_z_height'] = 0.712
 
     # ---------------------------------------------------------
     # 4. COMMON NODES (Launch in both, behavior changed by params)
